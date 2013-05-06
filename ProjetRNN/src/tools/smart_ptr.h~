@@ -1,0 +1,43 @@
+// stdafx.h�: fichier Include pour les fichiers Include syst�me standard,
+// ou les fichiers Include sp�cifiques aux projets qui sont utilis�s fr�quemment,
+// et sont rarement modifi�s
+//
+
+#pragma once
+
+#ifdef _WIN32
+#ifndef _WIN32_WINNT
+#define _WIN32_WINNT 0x0501
+#endif
+#endif
+
+#ifdef _WIN32
+#define isnan(_X) _isnan(_X)
+#endif
+
+
+
+#include <stdio.h>
+#include <string>
+#include <vector>
+#include <boost/smart_ptr/shared_ptr.hpp>
+#include <boost/lexical_cast.hpp>
+
+#define std_pair std::pair
+
+//#include <boost/unordered_map.hpp>
+//#define std_hash_map boost::unordered_map
+
+//#include <boost/unordered_set.hpp>
+//#define std_hash_set boost::unordered_set
+
+//#define std_vector std::vector
+//#define std_list std::list
+
+
+#define SPTR boost::shared_ptr
+
+template<class Source, class Target>
+inline SPTR<Target> sptr_dynamic_cast(const SPTR<Source>& s) {return boost::dynamic_pointer_cast<Target>(s);}
+
+
