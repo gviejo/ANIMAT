@@ -29,3 +29,9 @@ INSTALLATION
 	cmake .
 	make
 
+APPLICATION
+-------------------------------
+	
+	./expert
+	
+![alt tag](https://raw.github.com/viejo/ANIMAT/master/screen_app.png)
