@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
   int y_start = 53;
   int laser_size = 100;
   int nb_laser = 16;
-  float speed_factor = 0.1;
+  float speed_factor = 0.5;
   //////////////////////////////
   //Time parameters
   int delay = 1;
@@ -58,20 +58,18 @@ int main(int argc, char* argv[]) {
 			      eta));
   
   
-  for (int it=0;it<60000;it++) 
+  for (int it=0;it<200000;it++) 
     {      
+      //Avancement du robot
       navigator->update(it);            
 
+      //Apprentissage des Experts
       layer->backwardLayer(it, epsilon_app, navigator->getInput(), navigator->getOutput());
       
       //layer->display_all();
       //layer->display_error();
       layer->display_winner(it);
-
-      boost::this_thread::sleep(boost::posix_time::milliseconds(10));
     }
-
-  std::cout << " HELLO" << std::endl;
   
   return 0;
 };

@@ -5,6 +5,7 @@
 #include "../tools/Vector.hpp"
 #include "../tools/Matrix.hpp"
 #include "../tools/smart_ptr.h"
+#include <math.h>
 //#include <gsl/gsl_sf.h>
 //#include <gsl/gsl_randist.h>
 //#include <gsl/gsl_cdf.h>

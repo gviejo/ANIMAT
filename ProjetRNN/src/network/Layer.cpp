@@ -34,8 +34,7 @@ void Layer::display_error()
 
 void Layer::display_winner(int it)
 {
-  //std::cout << "Iteration: " << it << "  Gate : " << best << std::endl;
-  std::cout << it << " " << best << std::endl;
+  std::cout << "Iteration: " << it << "  Winning gate : " << best << std::endl;
 }
 
 SPTR<Expert> Layer::getExpert(int i)
@@ -59,14 +58,11 @@ SPTR<Vector> Layer::getOutput(int i)
 
 void Layer::computeErrorLayer(SPTR<Vector> input, SPTR<Vector> output)
 {
-  //input->display();
   for(int i=0; i< _nb_expert;i++)
   {
     float tmp = _layer[i]->computeError(input, output);
     _error_layer->setValue(i, tmp);
   }
-  //_layer[0]->getModule(1)->getSortie()->display();
-  //std::cout << "\n";
 }
 
 
@@ -97,7 +93,7 @@ void Layer::computePropaGate()
   for (int i = 0; i<_nb_expert;i++)
     {
       float delta = _layer[i]->getLoss()->getValue();
-      tmp->setValue(i, _gate->getValue(i)*exp(-delta/2*std::pow(_sigma, 2)));
+      tmp->setValue(i, _gate->getValue(i)*exp(-delta/2*pow(_sigma, 2)));
       big_sum = big_sum + tmp->getValue(i);
     }
   for (int i =0; i<_nb_expert;i++)

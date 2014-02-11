@@ -48,14 +48,14 @@ void TanModule::forward(SPTR<Vector> entree)
 
 void TanModule::backward_computeDeltaInputs(SPTR<Vector> input, SPTR<Vector> deltaOutput){
   for(int i=0; i<_taille_entree;i++){
-    float tmp = (4*exp(2*input->getValue(i)))/std::pow((exp(2*input->getValue(i))+1),2);
+    float tmp = (4*exp(2*input->getValue(i)))/pow((exp(2*input->getValue(i))+1),2);
     delta->setValue(i, deltaOutput->getValue(i)*tmp);    
   }
 }
 
 void TanModule::backward_computeDerivative(SPTR<Vector> input){
   for(int i=0; i<_taille_entree;i++){
-    float tmp = (4*exp(2*input->getValue(i)))/std::pow((exp(2*input->getValue(i))+1),2);
+    float tmp = (4*exp(2*input->getValue(i)))/pow((exp(2*input->getValue(i))+1),2);
     delta->setValue(i, tmp);    
   }
 }

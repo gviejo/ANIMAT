@@ -5,6 +5,7 @@
 #include "../tools/smart_ptr.h"
 #include <vector>
 #include <queue>
+#include <math.h>
 #include "../tools/Vector.hpp"
 #include "../tools/Matrix.hpp"
 #include "../tools/Plot.hpp"

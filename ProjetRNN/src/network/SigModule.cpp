@@ -47,14 +47,14 @@ void SigModule::forward(SPTR<Vector> entree)
 
 void SigModule::backward_computeDeltaInputs(SPTR<Vector> input, SPTR<Vector> deltaOutput){
   for(int i=0; i<_taille_entree;i++){
-    float tmp = exp(-input->getValue(i))/std::pow((1+exp(-input->getValue(i))),2);
+    float tmp = exp(-input->getValue(i))/pow((1+exp(-input->getValue(i))),2);
     delta->setValue(i, deltaOutput->getValue(i)*tmp);    
   }
 }
 
 void SigModule::backward_computeDerivative(SPTR<Vector> input) {
   for (int i=0;i<_taille_entree;i++) {
-    float tmp = exp(-input->getValue(i))/std::pow((1+exp(-input->getValue(i))),2);
+    float tmp = exp(-input->getValue(i))/pow((1+exp(-input->getValue(i))),2);
     delta->setValue(i, tmp);
   }
 }
