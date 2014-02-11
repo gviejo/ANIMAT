@@ -1,7 +1,7 @@
 *README.txt*
 ------------------------------------------------
 
-![alt tag](https://raw.github.com/viejo/ANIMAT/screen_app.png)
+![alt tag](https://github.com/gviejo/ANIMAT/blob/master/screen_app.png)
 
 # Projet ANIMAT  12/03/2013
 "Learning to perceive the world as articulated: an approach for hierarchical learning in sensory-motor systems"
