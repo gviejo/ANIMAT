@@ -2,6 +2,9 @@
 ------------------------------------------------
 
 # Projet ANIMAT  12/03/2013
+"Learning to perceive the world as articulated: an approach for hierarchical learning in sensory-motor systems"
+
+J.Tani & S.Nolfi, Neural Networks, 1999.
 
 Copyright (c) 2013 Guillaume VIEJO & Nassim Aklil. All rights reserved.
 
