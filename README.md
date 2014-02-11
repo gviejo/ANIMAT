@@ -1,6 +1,8 @@
 *README.txt*
 ------------------------------------------------
 
+![alt tag](https://raw.github.com/viejo/ANIMAT/master/screen_app.png)
+
 # Projet ANIMAT  12/03/2013
 "Learning to perceive the world as articulated: an approach for hierarchical learning in sensory-motor systems"
 
@@ -29,9 +31,5 @@ INSTALLATION
 	cmake .
 	make
 
-APPLICATION
--------------------------------
 	
-	./expert
-	
-![alt tag](https://raw.github.com/viejo/ANIMAT/master/screen_app.png)
+
