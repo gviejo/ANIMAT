@@ -6,7 +6,7 @@
 
 J.Tani & S.Nolfi, Neural Networks, 1999.
 
-Copyright (c) 2013 Guillaume VIEJO & Nassim Aklil. All rights reserved.
+Copyright (c) 2013 Guillaume VIEJO & Nassim AKLIL. All rights reserved.
 
 SOFTWARE VERSIONS
 -------------------------------
